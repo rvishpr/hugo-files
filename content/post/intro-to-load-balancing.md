@@ -1,12 +1,12 @@
 ---
-author: ""
+author: "Vishnu PR"
 categories: ["systems", "networking"]
 date: "2017-04-12T15:05:32-07:00"
 description: ""
 featured: ""
 featuredalt: ""
 featuredpath: ""
-title: "Intro to Load Balancing"
+title: "Introduction to Load Balancing"
 linktitle: "Intro to Load Balancing"
 ---
 
@@ -89,4 +89,4 @@ Some implementations use ‘stickiness’ as a factor when distributing load, wh
 
 In this case the state needs to be in a persistent store, so failure of a server doesn’t mean loss of data. Some in memory databases such as redis or memcached can be leveraged for this.  This is not trivial since database read and write operations are not usually expensive and even for in-memory databases, we need to replicate/backup the data often to prevent the database from becoming a SPOF.
 
-Usually, just one form of load balancing is not enough. L3 load balancers sit in front of a cluster of L4 balancers which in turn distribute to a cluster of L7 balancers which eventually distribute traffic to the servers. For an example of this, we can look at Facebook’s implementation which is presented in a nice talk at Building a billion user load balancer.
+Usually, just one form of load balancing is not enough. L3 load balancers sit in front of a cluster of L4 balancers which in turn distribute to a cluster of L7 balancers which eventually distribute traffic to the servers. For an example of this, we can look at Facebook’s implementation which is presented in a nice talk at [Building a billion user load balancer](https://www.usenix.org/conference/srecon15europe/program/presentation/shuff).

@@ -48,7 +48,7 @@ publishDir="docs"
 [params.intro]
     header    = "Vishnu PR"
 
-    paragraph = "Powered by Hugo"
+    paragraph = "A blog"
 
     about     = "Engineer. Blogger. Loves clichés"
 
